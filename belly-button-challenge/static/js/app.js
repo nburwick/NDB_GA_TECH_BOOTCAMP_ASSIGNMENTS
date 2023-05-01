@@ -2,7 +2,6 @@
 // function that populates the metadata
 function get_meta(id)
 {
-    
     d3.json("static/js/samples.json").then((data) => {
         //grab all data
         let metadata = data.metadata;
@@ -43,8 +42,7 @@ function create_bar_chart(id)
             title: `Top 10 Belly Button Bactieria: ${id}`
         }
         Plotly.newPlot("bar", [trace], layout)
-    });
-    
+    });  
 }
 
 // function to build Bubble Chart
@@ -141,19 +139,14 @@ function initialize()
         create_bubble_chart(sample1);
         create_guage_chart(sample1);
     });
-
-
 }
 
 // Option Change Function
-
 function optionChanged(id){
     get_meta(id);
     create_bar_chart(id);
     create_bubble_chart(id);
     create_guage_chart(id);
 }
-
-
 
 initialize();
