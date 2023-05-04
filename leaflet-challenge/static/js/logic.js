@@ -75,20 +75,16 @@ function createMap(earthquakes) {
 });
 
   
-  var topo = L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}', {
-	maxZoom: 20,
-	attribution: 'Tiles courtesy of the <a href="https://usgs.gov/">U.S. Geological Survey</a>'
-});
+  var topo = new L.StamenTileLayer("terrain");
 
   var outdoors = L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}', {
 	maxZoom: 20,
 	attribution: 'Tiles courtesy of the <a href="https://usgs.gov/">U.S. Geological Survey</a>'
 });
 
-  var gray = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png', {
-	maxZoom: 20,
-	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
-});
+  var gray = new L.StamenTileLayer("toner-lite");
+
+  var watercolor = new L.StamenTileLayer("watercolor");
 
   // Create layer for tectonic plates
   tectonicPlates = new L.layerGroup();
@@ -109,7 +105,8 @@ function createMap(earthquakes) {
         "OpenStreet": street,
         "Topo": topo,
         "Outdoors": outdoors,
-        "Grayscale": gray
+        "Grayscale": gray,
+        "Watercolor": watercolor
     };
 
     // Create an overlay object to hold our overlay.
