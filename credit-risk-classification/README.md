@@ -6,15 +6,15 @@ The purpose of this analysis is to build a machine learning model that can predi
 ## Results
 The results of the machine learning model with the original data are as follows:
 
-* Accuracy Score: [Insert accuracy score]
-* Precision Score: [Insert precision score]
-* Recall Score: [Insert recall score]
+* Accuracy Score: 95.20%
+* Precision Score: 85%
+* Recall Score: 91%
 
 The results of the machine learning model with the randomly balanced data are as follows:
 
-* Accuracy Score: [Insert accuracy score]
-* Precision Score: [Insert precision score]
-* Recall Score: [Insert recall score]
+* Accuracy Score: 99.37%
+* Precision Score: 84%
+* Recall Score: 99%
 
 
 ## Summary
