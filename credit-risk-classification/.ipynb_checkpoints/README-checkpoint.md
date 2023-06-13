@@ -9,13 +9,14 @@ The results of the machine learning model with the original data are as follows:
 * Accuracy Score: 95.20%
 * Precision Score: 85%
 * Recall Score: 91%
+* F1-Score: 88%
 
 The results of the machine learning model with the randomly balanced data are as follows:
 
 * Accuracy Score: 99.37%
 * Precision Score: 84%
 * Recall Score: 99%
-
+* F1-Score: 91%
 
 ## Summary
 
