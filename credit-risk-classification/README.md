@@ -1,7 +1,7 @@
 # Credit Risk Analysis Report
 ## Overview of the Analysis
 
-The purpose of this analysis is to build a machine learning model that can predict the creditworthiness of borrowers. By analyzing historical lending activity data, we aim to develop a model that can accurately identify healthy loans (0) and high-risk loans (1). Each model's performance could be evaluated using various metrics, including accuracy, precision, and recall. (Please see .ipynb file in this repository)
+The purpose of this analysis is to build a machine learning model that can predict the creditworthiness of borrowers. By analyzing historical lending activity data, we aim to develop a model that can accurately identify healthy loans (0) and high-risk loans (1). Each model's performance could be evaluated using various metrics, including accuracy, precision, and recall. [(Please see .ipynb file in this repository)](https://github.com/nburwick/NDB_GA_TECH_BOOTCAMP_ASSIGNMENTS/blob/Data_Analyitcs/credit-risk-classification/credit_risk_classification.ipynb)
 
 ## Results
 The results of the machine learning model with the original data are as follows:
